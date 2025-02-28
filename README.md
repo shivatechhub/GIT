@@ -10,7 +10,7 @@ some operations involve.
   * rebase the code. 
 
 
-##Basic GIT Commands <br>
+## Basic GIT Commands <br>
 git init: Initializes a new Git repository in the current 
 directory. <br>
  git clone <repo_url>: Clones a repository from a remote 
