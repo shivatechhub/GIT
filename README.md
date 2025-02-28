@@ -177,3 +177,4 @@ $ git fetch origin
 $ git remote show origin
 ```
 
+## Staging and Committing (Managing changes) 
