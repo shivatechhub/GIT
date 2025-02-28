@@ -179,3 +179,9 @@ $ git remote show origin
 ```
 
 ## Staging and Committing (Managing changes) 
+
+1. git add .: Stages all modified files in the working directory.
+This command stages all the changes in your working directory, including modified and newly created files (but not deleted files).
+```
+$ git add .
+```
