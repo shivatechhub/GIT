@@ -211,3 +211,22 @@ This is shorthand for git commit --all. It stages all modified and deleted track
 ```
 $ git commit -a -m "Staging and committing all modified files"
 ```
+
+6. git commit --no-verify: Skips pre-commit hooks while committing.
+This command skips the execution of pre-commit hooks, which are typically used to run tests, linters, or other checks before committing. Use this if you want to bypass those checks.
+```
+$ git commit --no-verify -m "Commit without pre-commit hooks"
+```
+
+7. git reset --soft HEAD~1: Moves the HEAD pointer back one commit but leaves your changes staged.
+This command moves the HEAD pointer (and the current branch) back by one commit, but it keeps the changes you made in the working directory and staged. This is useful if you want to edit the last commit or amend it.
+```
+$ git reset --soft HEAD~1
+```
+
+8. git reset --hard HEAD~1: Moves the HEAD pointer back one commit and discards changes in the working directory.
+This command resets the HEAD pointer back by one commit, and discards all changes in the working directory and the staging area. This is a destructive operation as it permanently removes uncommitted changes.
+```
+$ git reset --hard HEAD~1
+```
+
