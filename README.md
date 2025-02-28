@@ -75,6 +75,7 @@ $ git merge <feature_branch>
 ```
 $ git log
 $ git log -n 5 (shows last 5 commits)
+$ git log feature-branch (commit history for specific feature branch)
 ```
 
 11. git diff: Shows the differences between your working 
