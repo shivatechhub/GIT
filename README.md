@@ -11,7 +11,8 @@ some operations involve.
 
 
 ## Basic GIT Commands <br>
-```* **git init:** Initializes a new Git repository in the current 
+```
+* **git init:** Initializes a new Git repository in the current 
 directory. <br> 
 * git clone <repo_url>: Clones a repository from a remote 
 URL to your local machine. <br>
@@ -29,4 +30,5 @@ repository to your local working directory. <br>
 current branch. <br>
 * git log: Shows the commit history of the repository. <br>
 * git diff: Shows the differences between your working 
-directory and the index (staged changes). <br>```
+directory and the index (staged changes). <br>
+```
