@@ -50,6 +50,11 @@ $ git push
 
 7. git pull: Fetches and merges changes from the remote <br>
 repository to your local working directory. <br>
+```
+$ git pull origin main
+$ git pull origin <branch_name>
+$ git pull
+```
 
 8. git fetch: Downloads objects and refs from another repository 
 (without merging). <br>
