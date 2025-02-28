@@ -26,7 +26,9 @@ git clone <repo_url>
 
 3. git status: Shows the working directory status (which files are 
 modified, staged, etc.). <br>
-
+```
+git status
+```
 4. git add : Stages a file or files to be committed. <br>
 
 5. git commit -m "message": Commits staged changes to the 
