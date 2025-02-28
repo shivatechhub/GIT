@@ -142,3 +142,6 @@ default branch for the remote repository. <br>
 ```
 $ git remote set-head origin feature-branch
 ```
+
+##  Remote Commands (Managing remotes and syncing with the cloud) 
+
