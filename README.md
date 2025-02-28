@@ -32,8 +32,6 @@ $ git status
 4. git add : Stages a file or files to be committed. <br>
 ```
 $ git add *
-```
-```
 $ git add filename1 filename2
 ```
 
