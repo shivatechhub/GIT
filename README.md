@@ -365,6 +365,20 @@ garbage collection)
 | **`git archive --format=tar --output=<output_file>.tar <branch_name>`** | Creates a tarball archive of the repository at a specific branch.             | `git archive --format=tar --output=repo-archive.tar main`     |
 | **`git archive --format=zip --output=<output_file>.zip <branch_name>`** | Creates a zip archive of the repository at a specific branch.                 | `git archive --format=zip --output=repo-archive.zip main`    |
 
+## Git Blame and Annotate (Tracing the history of file content)
+| Command                                    | Description                                                               | Example Command                                            |
+|--------------------------------------------|---------------------------------------------------------------------------|------------------------------------------------------------|
+| **`git blame <file_path>`**                | Shows who last modified each line of a file and when.                     | `git blame README.md`                                      |
+| **`git annotate <file_path>`**             | An alias for `git blame`, which displays commit information for each line of a file. | `git annotate README.md`                                   |
+
+## Git Reflog (Tracking changes in the HEAD reference)
+| Command                                                            | Description                                                                 | Example Command                                                 |
+|--------------------------------------------------------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------|
+| **`git reflog`**                                                   | Displays a log of all movements of the HEAD pointer (useful for tracking changes like reset and rebase operations). | `git reflog`                 |
+| **`git reflog show`**                                              | Displays a detailed view of HEAD and the state of the repository.           | `git reflog show`                                              |
+| **`git reflog expire --expire=now --all`**                          | Removes all reflog entries that have expired.                               | `git reflog expire --expire=now --all`                         |
+| **`git reflog delete <ref_id>`**                                    | Deletes a specific reflog entry.                                           | `git reflog delete <ref_id>`                                   |
+
 
 
 
