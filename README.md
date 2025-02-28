@@ -110,30 +110,35 @@ $ git branch feature-branch
 branch. <br>
 ```
 git checkout feature-branch
-
 ```
 4. git checkout -b <branch_name>: Creates and switches to a 
 new branch in one step. <br>
 ```
-
+git checkout feature-branch
+git checkout -b new-feature
 ```
 5. git merge <branch_name>: Merges changes from the 
 specified branch into the current branch.  <br>
 ```
+$ git merge feature-branch
 ```
 6. git rebase <branch_name>: Applies changes from one 
 branch onto another branch (instead of merging). <br>
 ```
+$ git rebase feature-branch
 ```
 7. git branch -d <branch_name>: Deletes the specified branch 
 (locally). <br>
 ```
+$ git branch -d feature-branch
 ```
 8. git branch -D <branch_name>: Forcefully deletes a branch 
 (locally). <br>
 ```
+$ git branch -D feature-branch
 ```
 9. git remote set-head origin <branch_name>: Sets the 
 default branch for the remote repository. <br>
 ```
+$ git remote set-head origin feature-branch
 ```
