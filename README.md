@@ -95,3 +95,45 @@ $ git diff --word-diff (shows the word by word differences)
 $ git diff --stat (to show the summary of changes)
 ```
 
+
+
+## Branching Commands
+1. git branch: Lists all branches in your repository. <br>
+```
+$ git branch
+```
+2. git branch <branch_name>: Creates a new branch. <br>
+```
+$ git branch feature-branch
+```
+3. git checkout <branch_name>: Switches to an existing 
+branch. <br>
+```
+git checkout feature-branch
+
+```
+4. git checkout -b <branch_name>: Creates and switches to a 
+new branch in one step. <br>
+```
+
+```
+5. git merge <branch_name>: Merges changes from the 
+specified branch into the current branch.  <br>
+```
+```
+6. git rebase <branch_name>: Applies changes from one 
+branch onto another branch (instead of merging). <br>
+```
+```
+7. git branch -d <branch_name>: Deletes the specified branch 
+(locally). <br>
+```
+```
+8. git branch -D <branch_name>: Forcefully deletes a branch 
+(locally). <br>
+```
+```
+9. git remote set-head origin <branch_name>: Sets the 
+default branch for the remote repository. <br>
+```
+```
