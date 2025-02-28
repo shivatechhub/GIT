@@ -349,4 +349,23 @@ $ git reset --hard HEAD~1
 | **`git pre-push`**                                   | A hook that runs before a push to the remote repository is initiated. | `git pre-push`                                               |
 | **`git post-merge`**                                 | A hook that runs after a merge, ideal for cleanup or setup tasks.            | `git post-merge`                                             |
 
+## Git Clean and Prune (Cleaning up untracked files and 
+garbage collection) 
+| Command                                      | Description                                                                 | Example Command                                              |
+|----------------------------------------------|-----------------------------------------------------------------------------|--------------------------------------------------------------|
+| **`git clean -n`**                           | Shows which untracked files would be removed, but doesn’t actually delete them. | `git clean -n`                                               |
+| **`git clean -f`**                           | Removes untracked files from the working directory.                         | `git clean -f`                                               |
+| **`git clean -fd`**                          | Removes untracked files and directories.                                    | `git clean -fd`                                              |
+| **`git gc`**                                 | Runs garbage collection, cleaning up unnecessary files and optimizing the repository. | `git gc`                                                     |
+| **`git prune`**                              | Removes objects that are no longer needed (generally used for cleaning up in repositories with lots of history). | `git prune`                                           |
+
+## Git Archive (Creating a snapshot of the repository)
+| Command                                                        | Description                                                                  | Example Command                                                      |
+|----------------------------------------------------------------|------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| **`git archive --format=tar --output=<output_file>.tar <branch_name>`** | Creates a tarball archive of the repository at a specific branch.             | `git archive --format=tar --output=repo-archive.tar main`     |
+| **`git archive --format=zip --output=<output_file>.zip <branch_name>`** | Creates a zip archive of the repository at a specific branch.                 | `git archive --format=zip --output=repo-archive.zip main`    |
+
+
+
+
 
