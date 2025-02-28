@@ -44,6 +44,11 @@ $ git commit -m "sample commit message"
 ```
 
 6. git push: Pushes committed changes to the remote repository. <br>
+```
+$ git push origin main
+$ git push origin <branch_name>
+$ git push
+```
 
 7. git pull: Fetches and merges changes from the remote <br>
 repository to your local working directory. <br>
