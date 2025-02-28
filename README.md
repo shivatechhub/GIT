@@ -187,4 +187,27 @@ $ git add .
 $ git add -A  (This stages all changes, including deleted files.)
 ```
 
+2. git reset: Unstages a file (reverts it to the working directory).
+This command unstages a file, i.e., it removes it from the staging area but leaves the changes in the working directory.
+```
+$ git reset file.txt
+```
 
+3. git commit --amend: Modifies the last commit (can change the commit message or add changes).
+This command allows you to amend the most recent commit. You can use it to change the commit message or add new changes to the commit.
+Important: You can only amend the last commit in your local repository (before it has been pushed to a remote).
+```
+$ git commit --amend -m "Updated commit message"
+```
+
+4. git commit --all: Automatically stages tracked files and commits them.
+This command automatically stages all modified and deleted files that are already tracked (i.e., files that have been previously added to Git). It then commits them in one step.
+```
+$ git commit --all -m "Commit all tracked changes"
+```
+
+5. git commit -a: Stages and commits all modified files.
+This is shorthand for git commit --all. It stages all modified and deleted tracked files and commits them in one step.
+```
+$ git commit -a -m "Staging and committing all modified files"
+```
