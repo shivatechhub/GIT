@@ -144,4 +144,29 @@ $ git remote set-head origin feature-branch
 ```
 
 ##  Remote Commands (Managing remotes and syncing with the cloud) 
+1. git remote -v: Shows the remote repository URLs. 
+```
+$ git remote -v
+```
+2. git remote add : Adds a new remote repository. 
+```
+```
+3. git remote remove : Removes a remote repository. 
+```
+```
+4. git push origin <branch_name>: Pushes a branch to a remote repository. 
+```
+```
+5. git push -u origin <branch_name>: Pushes a branch to a remote repository and sets the upstream for the branch. 
+```
+```
+6. git pull origin <branch_name>: Fetches and merges a branch from the remote repository. 
+```
+```
+7. git fetch origin: Downloads objects and refs from the remote repository. 
+```
+```
+8. git remote show origin: Displays detailed information about a remote repository.
+```
+```
 
