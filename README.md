@@ -15,10 +15,10 @@ some operations involve.
 1. git init: Initializes a new Git repository in the current 
 directory. <br>
 
-2. git clone <repo_url>: Clones a repository from a remote 
+2. git clone: Clones a repository from a remote 
 URL to your local machine. <br>
 ```
-git clone <repo_url>
+Example: git clone <repo_url>
 ```
 
 3. git status: Shows the working directory status (which files are 
