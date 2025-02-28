@@ -30,6 +30,12 @@ modified, staged, etc.). <br>
 git status
 ```
 4. git add : Stages a file or files to be committed. <br>
+```
+git add *
+```
+```
+git add filename1 filename2
+```
 
 5. git commit -m "message": Commits staged changes to the 
 local repository with a message. <br>
