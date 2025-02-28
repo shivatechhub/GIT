@@ -184,4 +184,7 @@ $ git remote show origin
 This command stages all the changes in your working directory, including modified and newly created files (but not deleted files).
 ```
 $ git add .
+$ git add -A  (This stages all changes, including deleted files.)
 ```
+
+
