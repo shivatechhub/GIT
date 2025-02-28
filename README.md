@@ -76,8 +76,22 @@ $ git merge <feature_branch>
 $ git log
 $ git log -n 5 (shows last 5 commits)
 $ git log feature-branch (commit history for specific feature branch)
+$ git log --oneline (for compact view)
+$ git log --oneline -n 5 (shows last 5 commits in oneline)
+$ git log --author="Alice" (commits by a specific Author)
+$ git log --since="2025-01-01" (commits from the Date)
+$ git log --until="2025-02-01" (commits before a specific date)
 ```
 
 11. git diff: Shows the differences between your working 
 directory and the index (staged changes). <br>
+```
+$ git diff
+$ git diff --staged (difference between staged changes and last commit) 
+$ git diff <commit1> <commit2> (difference between 2 commits)
+$ git diff main..feature-branch (difference between main branch and Feature branch)
+$ git diff path/to/file.txt (shows changes made to a specific file)
+$ git diff --word-diff (shows the word by word differences)
+$ git diff --stat (to show the summary of changes)
+```
 
