@@ -150,23 +150,30 @@ $ git remote -v
 ```
 2. git remote add : Adds a new remote repository. 
 ```
+$ git remote add origin https://github.com/username/repository.git
 ```
 3. git remote remove : Removes a remote repository. 
 ```
+$ git remote remove origin
 ```
 4. git push origin <branch_name>: Pushes a branch to a remote repository. 
 ```
+$ git push origin feature-branch
 ```
 5. git push -u origin <branch_name>: Pushes a branch to a remote repository and sets the upstream for the branch. 
 ```
+$ git push -u origin feature-branch
 ```
 6. git pull origin <branch_name>: Fetches and merges a branch from the remote repository. 
 ```
+$ git pull origin feature-branch
 ```
 7. git fetch origin: Downloads objects and refs from the remote repository. 
 ```
+$ git fetch origin
 ```
 8. git remote show origin: Displays detailed information about a remote repository.
 ```
+$ git remote show origin
 ```
 
