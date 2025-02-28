@@ -17,6 +17,9 @@ directory. <br>
 
 2. git clone <repo_url>: Clones a repository from a remote 
 URL to your local machine. <br>
+```
+git clone <repo_url>
+```
 
 3. git status: Shows the working directory status (which files are 
 modified, staged, etc.). <br>
