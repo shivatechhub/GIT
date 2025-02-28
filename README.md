@@ -58,11 +58,24 @@ $ git pull
 
 8. git fetch: Downloads objects and refs from another repository 
 (without merging). <br>
+```
+$ git fetch origin main
+$ git fetch origin <branch_name>
+$ git fetch --all
+```
 
 9. git merge : Merges changes from the specified branch into the 
 current branch. <br>
+```
+$ git merge origin main
+$ git merge <feature_branch>
+```
 
 10. git log: Shows the commit history of the repository. <br>
+```
+$ git log
+$ git log -n 5 (shows last 5 commits)
+```
 
 11. git diff: Shows the differences between your working 
 directory and the index (staged changes). <br>
