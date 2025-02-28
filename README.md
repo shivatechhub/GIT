@@ -1,6 +1,7 @@
 # GIT
 GIT is version control tool that provides a set of commands to manage the source code. 
 some operations involve. 
+```
   * cloning the existing repo
   * creating a new branch
   * commiting the code.
@@ -8,7 +9,7 @@ some operations involve.
   * push the code.
   * resolving the merge conflicts.
   * rebase the code. 
-
+```
 
 ## Basic GIT Commands <br>
 
