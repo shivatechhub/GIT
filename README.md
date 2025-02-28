@@ -11,22 +11,22 @@ some operations involve.
 
 
 ## Basic GIT Commands <br>
-git init: Initializes a new Git repository in the current 
+* git init: Initializes a new Git repository in the current 
 directory. <br>
- git clone <repo_url>: Clones a repository from a remote 
+* git clone <repo_url>: Clones a repository from a remote 
 URL to your local machine. <br>
- git status: Shows the working directory status (which files are 
+* git status: Shows the working directory status (which files are 
 modified, staged, etc.). <br>
- git add : Stages a file or files to be committed. <br>
- git commit -m "message": Commits staged changes to the 
+* git add : Stages a file or files to be committed. <br>
+* git commit -m "message": Commits staged changes to the 
 local repository with a message. <br>
- git push: Pushes committed changes to the remote repository. <br>
- git pull: Fetches and merges changes from the remote <br>
+* git push: Pushes committed changes to the remote repository. <br>
+* git pull: Fetches and merges changes from the remote <br>
 repository to your local working directory. <br>
- git fetch: Downloads objects and refs from another repository 
+* git fetch: Downloads objects and refs from another repository 
 (without merging). <br>
- git merge : Merges changes from the specified branch into the 
+* git merge : Merges changes from the specified branch into the 
 current branch. <br>
- git log: Shows the commit history of the repository. <br>
- git diff: Shows the differences between your working 
+* git log: Shows the commit history of the repository. <br>
+* git diff: Shows the differences between your working 
 directory and the index (staged changes). <br>
