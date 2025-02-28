@@ -11,7 +11,7 @@ some operations involve.
 
 
 ## Basic GIT Commands <br>
-```
+
 1. git init: Initializes a new Git repository in the current 
 directory. <br>
 
@@ -45,4 +45,3 @@ current branch. <br>
 11. git diff: Shows the differences between your working 
 directory and the index (staged changes). <br>
 
-```
