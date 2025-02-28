@@ -230,3 +230,17 @@ This command resets the HEAD pointer back by one commit, and discards all change
 $ git reset --hard HEAD~1
 ```
 
+## Viewing and Comparing Changes (Inspecting changes) 
+| Command                                 | Description                                                             |
+|-----------------------------------------|-------------------------------------------------------------------------|
+| `git diff`                              | Shows changes between the working directory and the index (unstaged changes). |
+| `git diff --staged`                     | Shows changes between the staged files and the last commit.             |
+| `git diff <commit_id>`                  | Shows the differences between the working directory and a specific commit. |
+| `git log`                               | Displays the commit history.                                            |
+| `git log --oneline`                     | Displays the commit history in a simplified one-line format.            |
+| `git log --graph`                       | Displays the commit history as a graph.                                 |
+| `git log --author="name"`               | Filters commits by a specific author.                                   |
+| `git log --since="2 weeks ago"`         | Filters commits made after a specific date.                             |
+| `git blame <file_path>`                 | Shows line-by-line annotations for a file, telling who last modified each line. |
+| `git show <commit_id>`                  | Shows details of a specific commit (including diff and metadata).       |
+| `git show <commit_id>:<file_path>`      | Shows a specific file at a particular commit along with the diff.       |
