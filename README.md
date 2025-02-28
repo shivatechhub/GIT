@@ -14,11 +14,14 @@ some operations involve.
 
 1. git init: Initializes a new Git repository in the current 
 directory. <br>
+```
+git init
+```
 
 2. git clone: Clones a repository from a remote 
 URL to your local machine. <br>
 ```
-Example: git clone <repo_url>
+git clone <repo_url>
 ```
 
 3. git status: Shows the working directory status (which files are 
