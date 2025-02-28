@@ -244,3 +244,16 @@ $ git reset --hard HEAD~1
 | **`git blame <file_path>`**             | Shows line-by-line annotations for a file, telling who last modified each line. | `git blame README.md`                          |
 | **`git show <commit_id>`**              | Shows details of a specific commit, including diff and metadata.        | `git show abc1234`                              |
 | **`git show <commit_id>:<file_path>`**  | Shows a specific file at a particular commit along with the diff.        | `git show abc1234:README.md`                    |
+
+## Reverting and Resetting (Undoing changes)
+| Command                                      | Description                                                                 | Example Command                                          |
+|----------------------------------------------|-----------------------------------------------------------------------------|---------------------------------------------------------|
+| **`git reset <commit_id>`**                  | Moves HEAD to a specific commit, leaving your working directory intact.     | `git reset abc1234`                                      |
+| **`git reset --hard <commit_id>`**           | Resets your working directory, index, and HEAD to a specific commit (all changes will be lost). | `git reset --hard abc1234`                               |
+| **`git reset --soft <commit_id>`**           | Resets only the HEAD to a specific commit, leaving staged changes.         | `git reset --soft abc1234`                               |
+| **`git reset --mixed <commit_id>`**          | Resets the HEAD and index to a specific commit but keeps the working directory unchanged. | `git reset --mixed abc1234`                              |
+| **`git revert <commit_id>`**                 | Creates a new commit that undoes the changes of the specified commit.      | `git revert abc1234`                                     |
+| **`git restore <file_path>`**                | Restores the file(s) in the working directory from the index or a commit.  | `git restore README.md`                                  |
+| **`git restore --staged <file_path>`**       | Removes a file from the staging area.                                       | `git restore --staged README.md`                         |
+| **`git clean -f`**                           | Removes untracked files in the working directory.                          | `git clean -f`                                           |
+| **`git clean -fd`**                          | Removes untracked files and directories.                                   | `git clean -fd`                                          |
