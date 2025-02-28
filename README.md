@@ -15,30 +15,33 @@ some operations involve.
 1. git init: Initializes a new Git repository in the current 
 directory. <br>
 ```
-git init
+$ git init
 ```
 
 2. git clone: Clones a repository from a remote 
 URL to your local machine. <br>
 ```
-git clone <repo_url>
+$ git clone <repo_url>
 ```
 
 3. git status: Shows the working directory status (which files are 
 modified, staged, etc.). <br>
 ```
-git status
+$ git status
 ```
 4. git add : Stages a file or files to be committed. <br>
 ```
-git add *
+$ git add *
 ```
 ```
-git add filename1 filename2
+$ git add filename1 filename2
 ```
 
 5. git commit -m "message": Commits staged changes to the 
 local repository with a message. <br>
+```
+$ git commit -m "sample commit message"
+```
 
 6. git push: Pushes committed changes to the remote repository. <br>
 
