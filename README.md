@@ -257,3 +257,96 @@ $ git reset --hard HEAD~1
 | **`git restore --staged <file_path>`**       | Removes a file from the staging area.                                       | `git restore --staged README.md`                         |
 | **`git clean -f`**                           | Removes untracked files in the working directory.                          | `git clean -f`                                           |
 | **`git clean -fd`**                          | Removes untracked files and directories.                                   | `git clean -fd`                                          |
+
+## Stashing (Temporarily saving changes)
+| Command                                      | Description                                                                 | Example Command                                            |
+|----------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------|
+| **`git stash`**                              | Stashes the changes in your working directory (both staged and unstaged).   | `git stash`                                                |
+| **`git stash list`**                         | Lists all the stashes.                                                     | `git stash list`                                           |
+| **`git stash pop`**                          | Applies the latest stash and removes it from the stash list.                 | `git stash pop`                                            |
+| **`git stash apply`**                        | Applies a stash without removing it from the list.                           | `git stash apply`                                          |
+| **`git stash drop`**                         | Removes a specific stash from the stash list.                               | `git stash drop stash@{0}`                                 |
+| **`git stash clear`**                        | Clears all stashes.                                                        | `git stash clear`                                          |
+| **`git stash save "message"`**               | Stashes changes with an optional message for identification.                | `git stash save "WIP changes"`                              |
+| **`git stash branch <branch_name>`**         | Creates a new branch from the stash and applies it.                         | `git stash branch my-feature-branch`                       |
+
+##  Tags (Managing versions) 
+| Command                                      | Description                                                                 | Example Command                                             |
+|----------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------|
+| **`git tag`**                                | Lists all tags in the repository.                                           | `git tag`                                                   |
+| **`git tag <tag_name>`**                     | Creates a new tag at the current commit.                                    | `git tag v1.0`                                              |
+| **`git tag -a <tag_name> -m "message"`**      | Creates an annotated tag with a message.                                    | `git tag -a v1.0 -m "Initial release"`                       |
+| **`git tag -d <tag_name>`**                   | Deletes a tag locally.                                                     | `git tag -d v1.0`                                            |
+| **`git push origin <tag_name>`**              | Pushes a specific tag to the remote repository.                             | `git push origin v1.0`                                       |
+| **`git push origin --tags`**                  | Pushes all tags to the remote repository.                                   | `git push origin --tags`                                     |
+| **`git fetch --tags`**                        | Fetches all tags from the remote repository.                               | `git fetch --tags`                                           |
+
+##  Git Config and Info (Configuration and repository information)
+| Command                                           | Description                                                                 | Example Command                                                 |
+|---------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------|
+| **`git config --global user.name "Your Name"`**    | Sets your global username for commits.                                      | `git config --global user.name "John Doe"`                       |
+| **`git config --global user.email "youremail@example.com"`** | Sets your global email for commits.                                         | `git config --global user.email "john.doe@example.com"`          |
+| **`git config --list`**                           | Lists all configuration settings.                                           | `git config --list`                                              |
+| **`git config <key> <value>`**                    | Sets a specific configuration option.                                       | `git config core.editor "vim"`                                   |
+| **`git config --global core.editor <editor>`**    | Sets the default text editor for Git.                                       | `git config --global core.editor "vim"`                          |
+| **`git config --global color.ui true`**           | Enables colored output in Git.                                             | `git config --global color.ui true`                               |
+| **`git config --global alias.st status`**         | Creates a custom Git alias (e.g., `git st` for `git status`).               | `git config --global alias.st status`                            |
+
+## Git Hooks (Automated scripts triggered by Git actions)
+| Command                                             | Description                                                                 | Example Command                                                |
+|-----------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------|
+| **`git init`**                                      | Creates a `.git/hooks` directory, where hook scripts are stored.            | `git init`                                                     |
+| **`git commit-msg`**                                | A hook that runs before a commit message is saved (can enforce message formats). | `git commit-msg`                                               |
+| **`git pre-commit`**                                | A hook that runs before a commit is made (can be used for checks like linting). | `git pre-commit`                                               |
+| **`git post-commit`**                               | A hook that runs after a commit is made.                                    | `git post-commit`                                              |
+
+## Git Submodules (Managing external repositories within a project)
+| Command                                                   | Description                                                                 | Example Command                                                 |
+|-----------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------|
+| **`git submodule add <repo_url>`**                         | Adds a new submodule to the repository (downloads an external repo).        | `git submodule add https://github.com/example/repo.git`          |
+| **`git submodule init`**                                   | Initializes the submodules configured in the repository (after cloning).    | `git submodule init`                                            |
+| **`git submodule update`**                                 | Updates the submodules to the commit specified in the superproject.         | `git submodule update`                                          |
+| **`git submodule status`**                                 | Displays the current commit of the submodule.                               | `git submodule status`                                          |
+| **`git submodule deinit <submodule_path>`**                | Removes a submodule from the working directory.                             | `git submodule deinit path/to/submodule`                         |
+| **`git submodule update --remote`**                        | Updates the submodule to the latest commit from the remote repository.     | `git submodule update --remote`                                  |
+| **`git submodule foreach <command>`**                      | Runs a command in each submodule.                                          | `git submodule foreach 'git pull origin main'`                   |
+
+## Git Workflow Commands (Working with others and managing collaboration)
+| Command                                                   | Description                                                                 | Example Command                                                |
+|-----------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------|
+| **`git pull --rebase`**                                   | Fetches and applies remote changes, rebasing your local commits on top of them. | `git pull --rebase`                                            |
+| **`git rebase -i <commit_id>`**                           | Starts an interactive rebase to modify commit history (e.g., squash, reword commits). | `git rebase -i HEAD~3`                                         |
+| **`git rebase --continue`**                               | Continues the rebase after resolving conflicts.                             | `git rebase --continue`                                        |
+| **`git rebase --abort`**                                  | Aborts the rebase process and restores the original state.                  | `git rebase --abort`                                           |
+| **`git merge --no-ff`**                                   | Merges a branch with a "no fast-forward" option to ensure a merge commit is created. | `git merge --no-ff feature-branch`                             |
+| **`git pull --no-commit`**                                | Pulls changes but doesn't automatically commit them.                        | `git pull --no-commit`                                         |
+| **`git push --force-with-lease`**                          | Forces a push but checks if the remote branch has been updated (safer than `git push --force`). | `git push --force-with-lease`                            |
+| **`git push --force`**                                     | Forces a push to the remote branch, potentially overwriting changes.       | `git push --force`                                             |
+| **`git cherry-pick <commit_id>`**                          | Applies the changes from a specific commit onto the current branch.        | `git cherry-pick abc1234`                                      |
+
+## Git Merge Strategies (Handling merge conflicts and strategies) 
+| Command                                                        | Description                                                                 | Example Command                                                 |
+|----------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------|
+| **`git merge --strategy=ours <branch_name>`**                   | Resolves merge conflicts by favoring the current branch’s changes.          | `git merge --strategy=ours feature-branch`                      |
+| **`git merge --strategy=theirs <branch_name>`**                 | Resolves merge conflicts by favoring the other branch’s changes.            | `git merge --strategy=theirs feature-branch`                    |
+| **`git merge --abort`**                                         | Aborts the merge process if there are conflicts and restores the working directory. | `git merge --abort`                                             |
+
+## Git bisect (Finding the commit that introduced a bug) 
+| Command                                                | Description                                                              | Example Command                                                   |
+|--------------------------------------------------------|--------------------------------------------------------------------------|-------------------------------------------------------------------|
+| **`git bisect start`**                                  | Starts a binary search for the commit that introduced a bug.             | `git bisect start`                                                |
+| **`git bisect bad`**                                    | Marks the current commit as "bad" (where the bug is present).            | `git bisect bad`                                                  |
+| **`git bisect good <commit_id>`**                       | Marks a commit as "good" (where the bug was not present).                | `git bisect good abc1234`                                         |
+| **`git bisect reset`**                                  | Ends the bisect process and restores the repository to the state it was before starting the bisect. | `git bisect reset`                                      |
+| **`git bisect log`**                                    | Displays the log of the bisect process.                                  | `git bisect log`                                                  |
+
+##  Git Hooks for Automation (Pre-commit and post commit hooks)
+| Command                                             | Description                                                                 | Example Command                                              |
+|-----------------------------------------------------|-----------------------------------------------------------------------------|--------------------------------------------------------------|
+| **`git commit-msg`**                                 | A hook script that runs before the commit message is finalized (you can use this to enforce rules, like requiring certain keywords). | `git commit-msg`          |
+| **`git pre-commit`**                                 | A hook that can be used to run checks on files before the commit is finalized, such as linters or tests. | `git pre-commit`                                      |
+| **`git post-commit`**                                | A hook that is triggered after a commit has been completed, useful for triggering actions like notifications or build processes. | `git post-commit`             |
+| **`git pre-push`**                                   | A hook that runs before a push to the remote repository is initiated. | `git pre-push`                                               |
+| **`git post-merge`**                                 | A hook that runs after a merge, ideal for cleanup or setup tasks.            | `git post-merge`                                             |
+
+
